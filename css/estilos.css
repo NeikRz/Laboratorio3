@@ -1,7 +1,13 @@
 *{
+    max-width: 1300px;
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*INDEX*/
+html{
+    margin: 0 auto;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -16,6 +22,7 @@ header{
 	display: flex;
     justify-content: space-between;
     height: 70px;
+    z-index: 9999;
 }
 #logo{
     display: flex;
@@ -31,6 +38,7 @@ nav{
     display: flex;
     height: 100%;
     justify-content: space-between;
+    z-index: 9999;
 }
 .menu_nav{
     height: 100%;
@@ -39,7 +47,6 @@ nav{
 .menu_item{
     display: inline-block;
     list-style: none;
-    /*width: 155px;*/
     height: 100%;
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
     text-transform: uppercase;
@@ -47,6 +54,20 @@ nav{
 }
 .menu_item:hover{
     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.menu_link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+}
+.menu_link--inside{
+    justify-content: center;
+    padding: 0;
 }
 .menu_inside{
     list-style: none;
@@ -57,14 +78,9 @@ nav{
 .menu_item_inside{
     height: 3rem;
 }
-.menu_link{
-    color: #fff;
-    text-decoration: none;
-    padding: 0 30px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.menu_item_inside a{
+    width: 100%;
+    padding: auto;
 }
 .menu_link:hover{
     background-color: #191e25;
@@ -106,7 +122,7 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    font-size: 40px;
+    font-size: 3rem;
     letter-spacing: 17px;
     line-height: 26px;
     text-transform: uppercase;
@@ -115,7 +131,7 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    font-size: 18px;
+    font-size: 1.2rem;
     letter-spacing: 3px;
     line-height: 18px;
 }
@@ -123,7 +139,7 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 24px;
     letter-spacing: 0.5px;
 }
@@ -144,6 +160,329 @@ section{
     letter-spacing: 2px;
     line-height: 18px;
 }
+.second iframe{
+    width: 750px;
+    height: 422px; 
+}
+/*GALERIA*/
+.main_galery{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+}
+.lb-caption{
+    color: #fff;
+}
+.main_galery_tittle{
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(172, 109, 42);
+}
+.galery_container{
+    display: inline-flex;
+    flex-wrap:wrap;
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    gap: 25px;
+    padding: 2% 0;
+}
+.example-image-link{
+    border: 1px solid rgb(21, 46, 51);
+    box-shadow: 5px 5px 15px 0 rgb(21, 46, 51);
+}
+.example-image{
+    height: 100%;
+    width: 100%;
+}
+/*CONTACTO*/
+.main_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    margin-bottom: 5%;
+}
+.contact_form{
+    position: relative;
+	width: 460px;
+    height: auto;
+    margin: 80px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    background-color: rgb(48, 103, 114);
+    padding-left: 30px;
+}
+input{
+	background-color: #fbfbfb;
+	width: 408px;
+	height: 40px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	margin-top: 10px;
+	padding-left: 10px;
+    margin-bottom: 20px;
+}
+textarea{
+    background-color: #fbfbfb;
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #000; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+label{
+    display: block; 
+	float: center; 
+    color: rgb(172, 109, 42);
+    font-weight: bold;
+}
+.boton-enviar{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: rgb(172, 109, 42); 
+	border-color: #000; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 405px;   
+    cursor: pointer;
+}
+.boton-enviar p{
+	color: #000; 
+    font-weight: 600;
+}
+span{
+	color: #000;
+}
+.aviso{
+	font-size: 13px;  
+	color: #000000;
+    font-weight: bold;
+}
+#form_title{
+	font-size: 39px;  
+	text-align: left; 
+	padding-bottom: 20px; 
+	color: #000;
+}
+#form_subtitle{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+form p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+/*TEMPORADA1*/
+.main_temp1{
+    padding: 2%;
+    width: 95%;
+    margin: auto;
+}
+.sinopsis{
+    text-align: center;
+}
+.sinopsis h2{
+    font-size: 2.8rem;
+    margin-bottom: 1%;
+}
+.sinopsis div{
+    font-size: 1.6rem;
+    text-align: justify;
+}
+.episodios{
+    text-align: center;
+}
+.episodios h3{
+    font-size: 2.3rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+.episodios_lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lista_items{
+    display: flex;
+    height: 100%;
+}
+.lista_episodios_container{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: rgb(13, 29, 32);
+    transition: all .5s;
+}
+.lista_episodios_container:hover{
+    transition: all .5s;
+    background-color: rgb(38, 85, 94);
+}
+.episodio_imagen{
+    width: 30%;
+}
+.episodio_imagen img{
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 1%;
+}
+.episodio_desc{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-evenly;
+    padding: 5%;
+    font-size: 1.5rem;
+    margin-left: 1.5%;
+}
+.episodio_desc h4{
+text-decoration: overline;
+}
+.episodio_desc p{
+    text-align: start;
+}
+/* INFORMACION */
+.datos_tecnicos{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 25px;
+    gap: 25px;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 2.5rem;
+}
+.datos_tecnicos h3{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.datos_tecnicos div{
+    padding-left: 2%;
+    border-radius: 15px;
+    background-color: rgb(41, 89, 97);
+    width: 95%;
+    transition: all .5s;
+}
+.datos_tecnicos div:hover{
+    transition: all .5s;
+    background-color: rgb(78, 172, 191);
+}
+.criticas{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 25px;
+    gap: 25px;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 2.5rem;
+}
+.criticas h3{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.criticas div{
+    padding-left: 2%;
+    border-radius: 15px;
+    background-color: rgb(41, 89, 97);
+    width: 95%;
+    transition: all .5s;
+}
+.criticas div:hover{
+    transition: all .5s;
+    background-color: rgb(78, 172, 191);
+}
+.criticas a{
+    font-weight: bold;
+    text-decoration-line: overline;
+}
+/* PERSONAJES */
+.main_personajes{
+    padding: 2%;
+    width: 95%;
+    margin: auto;
+}
+.main_personajes h1{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: rgb(172, 109, 42);
+}
+.personaje_container{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: rgb(13, 29, 32);
+    transition: all .5s;
+}
+.personaje_container:hover{
+    transition: all .5s;
+    background-color: rgb(38, 85, 94);
+}
+.personaje_img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#reacherimg{
+    width: 500px;
+    height: 666px;
+}
+.descripcion{
+    text-align: left;
+    padding: 2%;
+    font-size: 2rem;
+}
+/* FOOTER */
 footer{
     display: flex;
     justify-content: center;
@@ -153,6 +492,9 @@ footer{
     color: #fff;
 }
 @media (max-width: 480px) { 
+    *{
+        max-width: 480px;
+    }
     header{
         align-items: center;
         justify-content: space-around;
@@ -162,14 +504,16 @@ footer{
         top: 0;
         z-index: 1;
         height: 60px;
-        b
-        order: 0.1px solid greenyellow;
     }
     #logo{
-        display: block;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: flex;
     }
     .icon {
-        display: block;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: flex;
     }
     nav {
         display: none;
@@ -177,7 +521,6 @@ footer{
     }
     nav.responsive {
         display: block;
-        margin-top: 8px;
     }
     nav.responsive ul {
         display: block;
@@ -192,18 +535,20 @@ footer{
         color: #fff;
         display: flex;
         height: 100%;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        border: 0.1px solid #fff;
+        width: 100%;
+        border: 0.1px solid rgb(0, 5, 40);
     }
     .menu_item--show{
         position: relative;
     }
     .menu_inside{
         position: absolute;
-        right: 187px;
+        right: 192px;
         top: 0;
+        width: 100%;
+    }
+    .menu_item_inside{
+        border: 0.1px solid rgb(0, 5, 40);
     }
     section{
         max-width: 480px;
@@ -224,10 +569,15 @@ footer{
         display: block;
         height: 300px;
     }
+    .div_principal div{
+        width: 100%;
+        margin-right: 0;
+    }
     .tittle{
+        margin: 0;
         text-align: center;
         padding: 5%;
-        font-size: 25px;
+        font-size: 1.9rem;
         letter-spacing: 14px;
         line-height: 26px;
         width: 100%;
@@ -236,18 +586,62 @@ footer{
         text-align: center;
         padding: 2%;
     }
+    .div_temp1 a{
+        font-size: 1.4rem;
+    }
     .div_argumento{
         padding: 5%;
+        font-size: 1.1rem;
     }
-    .second{
-        display: none;
-        margin-top: 0%;
+    .second iframe{
+        width: 448px;
+        height: 252px; 
+    }
+    .second div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
     h2{
         font-size: 1rem;
     }
     h4{
         font-size: 1rem;
+    }
+    .contact_form{
+		top: -50px;
+	}
+    /* GALERIA */
+    .main_galery{
+        width: 100%;
+    }
+    .galery_container a{
+        height: 200px;
+        width: 200px;
+    }
+
+    /* TEMPORADA1 */
+    .episodio_imagen{
+        display: none;
+    }
+    .lista_episodios_container{
+        margin: 0;
+        justify-content: left;
+    }
+    .episodio_desc{
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    /* PERSONAJES */
+    .personaje_container{
+        flex-direction: column;
+    }
+    #reacherimg{
+        width: 100%;
     }
     footer{
         height: 80px;

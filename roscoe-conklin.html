@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Reacher(2022) Roscoe Conklin</title>
 </head>
@@ -51,21 +53,29 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Personajes</h2>
-        <Section id="boxpersonajes">
-            <div id="personaje">
-                <h3>Roscoe Conklin</h3>
-                <img src="Imgs/Personajes/Roscoe Conklin mirada fija.jpg" alt="Roscoe Conklin mirada fija" width="300">
-                <div class="descripcion">
-                    Roscoe Conklin: es un oficial de policía en Margrave que trabaja con Reacher y Finlay. Es una mujer joven y talentosa, y se une al equipo de investigación para descubrir la verdad detrás del crimen en Margrave.
-                </div>
+    <main class="main_personajes">
+        <h1>Roscoe Conklin</h1>
+        <div class="personaje_container">
+            <div class="personaje_img">
+                <img src="Imgs/Personajes/Roscoe Conklin mirada fija.jpg" alt="Roscoe Conklin mirada fija">
             </div>
-        </Section>
+            <div class="descripcion">
+                Es un oficial de policía en Margrave que trabaja con Reacher y Finlay. Es una mujer joven y talentosa, y se une al equipo de investigación para descubrir la verdad detrás del crimen en Margrave.
+            </div>
+        </div>
     </main>
-
     <footer>
         <small>Derechos reservados &copy; Nico Ruiz 2023</small>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Reacher(2022) Jack Reacher</title>
 </head>
@@ -51,21 +53,29 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Personajes</h2>
-        <div class="boxpersonajes">
-            <div id="jack-reacher">
-                <h3>Jack Reacher</h3>
-                <img src="/Imgs/Personajes/Jack Reacher Poster mirada al frente.jpg" alt="Jack Reacher Poster mirada al frente" width="300">
-                <div class="descripcion">
-                    Jack Reacher: es el protagonista de la serie y un exoficial militar de la Policía Militar del Ejército de los Estados Unidos. Es un hombre solitario, astuto e inteligente, con una habilidad excepcional para resolver crímenes. Es conocido por su gran habilidad en combate y su gran fuerza física.
-                </div>
+    <main class="main_personajes">
+        <h1>Jack Reacher</h1>
+        <div class="personaje_container">
+            <div class="personaje_img">
+                <img id="reacherimg" src="/Imgs/Personajes/Jack Reacher Poster mirada al frente.jpg" alt="Jack Reacher Poster mirada al frente">
+            </div>
+            <div class="descripcion">
+                Es el protagonista de la serie y un exoficial militar de la Policía Militar del Ejército de los Estados Unidos. Es un hombre solitario, astuto e inteligente, con una habilidad excepcional para resolver crímenes. Es conocido por su gran habilidad en combate y su gran fuerza física.
             </div>
         </div>
     </main>
-
     <footer>
         <small>Derechos reservados &copy; Nico Ruiz 2023</small>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>

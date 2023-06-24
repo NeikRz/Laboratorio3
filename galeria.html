@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/lightbox.css">
     <title>Reacher(2022) Galeria</title>
@@ -12,7 +14,7 @@
 <body>  
     <header>
         <div id="logo">
-            <a href="index.html"><img src="/Imgs/Logo.jpg" alt="Logo Reacher"></a>            
+            <a href="index.html"><img src="./Imgs/Logo.jpg" alt="Logo Reacher"></a>            
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <nav id="nav">            
@@ -21,7 +23,7 @@
                     <a href="index.html" class="menu_link">Inicio</a>
                 </li>
                 <li class="menu_item menu_item--show">
-                    <a href="temporada1.html" class="menu_link">Temporada 1</a>
+                    <p class="menu_link">Temporada 1</p>
                     <ul class="menu_inside">
                         <li class="menu_item_inside"><a href="temporada1.html#t1-episodio1" class="menu_link menu_link--inside">Episodio 1</a></li>
                         <li class="menu_item_inside"><a href="temporada1.html#t1-episodio2" class="menu_link menu_link--inside">Episodio 2</a></li>
@@ -52,10 +54,10 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h3>Galería de Fotos</h3>
-        <div>
+    </header>    
+    <main class="main_galery">
+        <h1 class="main_galery_tittle">Galería</h1>
+        <div class="galery_container">
             <a class="example-image-link" href="Imgs/Galeria/1.jpg" data-lightbox="Reacher" data-title="Reacher siendo arrestado con las manos detras de la cabeza"><img class="example-image" src="Imgs/Galeria/m1.jpg" alt="Reacher siendo arrestado con las manos detras de la cabeza"/></a>
             <a class="example-image-link" href="Imgs/Galeria/2.jpg" data-lightbox="Reacher" data-title="Reacher y Oscar mirandose enfrentados"><img class="example-image" src="Imgs/Galeria/m2.jpg" alt="Reacher y Oscar mirandose enfrentados"/></a>
             <a class="example-image-link" href="Imgs/Galeria/3.jpg" data-lightbox="Reacher" data-title="Oscar y Roscoe sorprendidos con Reacher"><img class="example-image" src="Imgs/Galeria/m3.jpg" alt="Oscar y Roscoe sorprendidos con Reacher"/></a>
@@ -93,5 +95,15 @@
         <small>Derechos reservados &copy; Nico Ruiz 2023</small>
     </footer>
     <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>
