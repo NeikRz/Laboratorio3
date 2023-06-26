@@ -216,7 +216,7 @@ section{
 }
 #galery_background{
     height: 650px;
-    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(./Imgs/Galeria/16.jpg);
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(../Imgs/Galeria/16.jpg);
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -344,7 +344,7 @@ span{
 /*TEMPORADA1*/
 #temp_background{
     height: 650px;
-    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(./Imgs/Galeria/26.jpg);
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(../Imgs/Galeria/26.jpg);
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -404,7 +404,7 @@ text-decoration: overline;
 /* INFORMACION */
 #info_background{
     height: 650px;
-    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(./Imgs/Galeria/5.jpg);
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(../Imgs/Galeria/5.jpg);
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -484,7 +484,7 @@ text-decoration: overline;
 /* PERSONAJES */
 #personajes_background{
     height: 650px;
-    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 80%), url(./Imgs/Galeria/17.jpg);
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 80%), url(../Imgs/Galeria/17.jpg);
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -683,7 +683,7 @@ footer{
     #galery_background{
         max-width: 480px;
         height: 250px;
-        background-image: url(./Imgs/Galeria/16.jpg);
+        background-image: url(../Imgs/Galeria/16.jpg);
         background-size:contain;
         background-repeat: no-repeat;
     }
@@ -692,7 +692,7 @@ footer{
     #temp_background{
         max-width: 480px;
         height: 250px;
-        background-image: url(./Imgs/Galeria/26.jpg);
+        background-image: url(../Imgs/Galeria/26.jpg);
         background-size:contain;
         background-repeat: no-repeat;
     }
@@ -726,7 +726,7 @@ footer{
     #personajes_background{
         max-width: 480px;
         height: 250px;
-        background-image: url(./Imgs/Galeria/17.jpg);
+        background-image: url(../Imgs/Galeria/17.jpg);
         background-size:contain;
         background-repeat: no-repeat;
     }
@@ -751,7 +751,7 @@ footer{
     #info_background{
         max-width: 480px;
         height: 250px;
-        background-image: url(./Imgs/Galeria/5.jpg);
+        background-image: url(../Imgs/Galeria/5.jpg);
         background-size:contain;
         background-repeat: no-repeat;
     }
