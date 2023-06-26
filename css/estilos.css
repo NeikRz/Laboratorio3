@@ -10,12 +10,15 @@ h1{
     color: rgb(172, 109, 42);
     text-align: center;
     margin: 1%;
+    -webkit-text-stroke: 1px black;
+    font-size: 3rem;
 }
 h2{
     font-size: 1.8rem;
     line-height: 20px;
     color: rgb(172, 109, 42);
     margin: 1%;
+    -webkit-text-stroke: 1px black;
 }
 h3{
     padding-top: 1%;
@@ -27,6 +30,7 @@ h3{
     color: rgb(172, 109, 42);
     text-align: center;
     margin: 1%;
+    -webkit-text-stroke: 1px black;
 }
 h4{
     padding-top: 1%;
@@ -35,6 +39,7 @@ h4{
     font-size: 1.4rem;
     line-height: 20px;
     letter-spacing: 0.5px;
+    -webkit-text-stroke: 1px black;
 }
 
 p{
@@ -132,6 +137,7 @@ nav ul li p{
 .icon { 
     display: none; 
 }
+/* INDEX */
 section{
     max-width: 1300px;
     width: 100%;
@@ -162,9 +168,10 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    letter-spacing: 17px;
+    letter-spacing: 15px;
     line-height: 26px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .tittle h1{
     text-align: left;
@@ -191,9 +198,10 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    font-size: 18px;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     line-height: 18px;
+    -webkit-text-stroke: 0;
 }
 .second iframe{
     width: 750px;
@@ -203,10 +211,14 @@ section{
 .main_galery{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 95%;
     justify-content: center;
     align-content: center;
+}
+#galery_background{
+    height: 650px;
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(/Imgs/Galeria/16.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 .lb-caption{
     color: #fff;
@@ -231,25 +243,24 @@ section{
 }
 /*CONTACTO*/
 .main_contacto{
-    width: 95%;
     margin: auto;
-    padding: 1% ;
-    background-color: red;
+    padding: 4% ;
+    background-image: url(/Imgs/Galeria/7.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .contact_form{
-    margin-top: 1%;
     position: relative;
 	width: 460px;
     height: auto;
 	border-radius: 10px;
-	padding-top: 30px;
-	padding-bottom: 20px;
+	padding: 4%;
     background-color: rgb(48, 103, 114);
-    padding-left: 30px;
 }
 input{
 	background-color: #fbfbfb;
-	width: 408px;
+	width: 100%;
 	height: 40px;
 	border-radius: 5px;
 	border-style: solid;
@@ -261,7 +272,7 @@ input{
 }
 textarea{
     background-color: #fbfbfb;
-	width: 405px; 
+	width: 100%; 
 	height: 150px; 
 	border-radius: 5px;  
 	border-style: solid; 
@@ -277,6 +288,7 @@ label{
 	float: center; 
     color: rgb(172, 109, 42);
     font-weight: bold;
+    font-size: 1.3rem;
 }
 .boton-enviar{
 	height: 45px; 
@@ -289,7 +301,7 @@ label{
 	border-color: #000; 
 	border-style: solid; 
 	border-radius: 10px;	
-	width: 405px;   
+	width: 100%;   
     cursor: pointer;
 }
 .boton-enviar p{
@@ -305,16 +317,15 @@ span{
 }
 #form_title{  
 	text-align: left; 
-	padding-bottom: 20px; 
+	padding-bottom: 20px;
+    -webkit-text-stroke: 1px black;
 }
 #form_subtitle{
-	font-size: 16px; 
+    text-align: start;
+	font-size: 1.7rem; 
 	padding-bottom: 30px;
-	color: #0e0e0e;   
-}
-form p{
-	font-size: 14px; 
-	color: #0e0e0e; 
+	color: #0e0e0e;
+    -webkit-text-stroke: 0;
 }
 ::-webkit-input-placeholder {
     color: #a8a8a8;
@@ -333,7 +344,7 @@ form p{
 /*TEMPORADA1*/
 #temp_background{
     height: 650px;
-    background-image: url(/Imgs/Galeria/26.jpg);
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(/Imgs/Galeria/26.jpg);
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -385,11 +396,32 @@ form p{
 }
 .episodio_desc h4{
 text-decoration: overline;
+-webkit-text-stroke: 0;
 }
 .episodio_desc p{
     text-align: start;
 }
 /* INFORMACION */
+#info_background{
+    height: 650px;
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 50%), url(/Imgs/Galeria/5.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.datos_tecnicos p span{
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-weight: bold;
+}
+.criticas p span{
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-weight: bold;
+}
 .datos_tecnicos{
     display: inline-flex;
     flex-direction: column;
@@ -434,22 +466,25 @@ text-decoration: overline;
 .criticas div{
     padding-left: 2%;
     border-radius: 15px;
-    background-color: rgb(41, 89, 97);
+    background-color: rgb(13, 29, 32);
     width: 95%;
     transition: all .5s;
 }
 .criticas div:hover{
     transition: all .5s;
-    background-color: rgb(78, 172, 191);
+    background-color: rgb(38, 85, 94);
 }
 .criticas a{
+    display: block;
+    padding-top: 2%;
+    padding-left:  1%;
     font-weight: bold;
     text-decoration-line: overline;
 }
 /* PERSONAJES */
 #personajes_background{
     height: 650px;
-    background-image: url(/Imgs/Galeria/17.jpg);
+    background-image: linear-gradient(to top,rgba(0, 5, 13,100), rgba(255, 255, 255, 0) 80%), url(/Imgs/Galeria/17.jpg);
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -458,40 +493,47 @@ text-decoration: overline;
     width: 95%;
     margin: auto;
 }
-.main_personajes h1{
-    text-align: center;
-    font-size: 3rem;
-    text-decoration: underline;
-    color: rgb(172, 109, 42);
+.section_personajes h1{
+    margin-bottom: 3%;
 }
 .personaje_container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding: 2%;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
     border-radius: 25px;
     background-color: rgb(13, 29, 32);
     transition: all .5s;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-bottom: 6%;
 }
 .personaje_container:hover{
     transition: all .5s;
     background-color: rgb(38, 85, 94);
 }
 .personaje_container h2{
+    width: 100%;
     text-align: center;
+    margin-top: 0.5%;
+    margin-bottom: 0.5;
+}
+.personaje_img{
+    width: 30%;
 }
 .personaje_img img{
-    justify-content: center;
-    width: 20%;
-    max-height: 300px;
-    object-fit: contain;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 .descripcion{
-    width: 60%;
+    width: 70%;
+    padding-top: 0;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 /* FOOTER */
 footer{
@@ -562,6 +604,7 @@ footer{
     .menu_item_inside{
         border: 0.1px solid rgb(0, 5, 40);
     }
+    /* INDEX */
     section{
         max-width: 480px;
         width: 100%;
@@ -587,7 +630,7 @@ footer{
     }
     .tittle{
         padding: 0;
-        letter-spacing: 14px;
+        letter-spacing: 5px;
         line-height: 26px;
         width: 100%;
         margin-top: 5%;
@@ -596,7 +639,6 @@ footer{
     .tittle h1{
         margin: 0;
         text-align: center;
-        font-size: 2.3rem;
         color: rgb(172, 109, 42);
     }
     .div_temp1{
@@ -638,6 +680,13 @@ footer{
         height: 200px;
         width: 200px;
     }
+    #galery_background{
+        max-width: 480px;
+        height: 250px;
+        background-image: url(/Imgs/Galeria/16.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
 
     /* TEMPORADA1 */
     #temp_background{
@@ -674,10 +723,54 @@ footer{
     .personaje_container{
         flex-direction: column;
     }
-    #reacherimg{
+    #personajes_background{
+        max-width: 480px;
+        height: 250px;
+        background-image: url(/Imgs/Galeria/17.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .personaje_container h2{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 1.8rem;
+    }
+    .personaje_img{
         width: 100%;
+    }
+    .descripcion{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+    }
+    /* INFORMACION */
+    #info_background{
+        max-width: 480px;
+        height: 250px;
+        background-image: url(/Imgs/Galeria/5.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
     }
     footer{
         height: 80px;
+    }
+    /* CONTACTO */
+    .contact_form{
+        position: static;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 3%;
+    }
+    #form_title{
+        padding-bottom: 1%;
+    }
+    #form_subtitle{
+        padding-bottom: 3%;
+        padding-left: 0;
     }
 }
