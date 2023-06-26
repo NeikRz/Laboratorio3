@@ -5,6 +5,46 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+h1{
+    font-size: 2.8rem;
+    color: rgb(172, 109, 42);
+    text-align: center;
+    margin: 1%;
+}
+h2{
+    font-size: 1.8rem;
+    line-height: 20px;
+    color: rgb(172, 109, 42);
+    margin: 1%;
+}
+h3{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    font-size: 2rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgb(172, 109, 42);
+    text-align: center;
+    margin: 1%;
+}
+h4{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    font-size: 1.4rem;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
 /*INDEX*/
 html{
     margin: 0 auto;
@@ -122,26 +162,21 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    font-size: 3rem;
     letter-spacing: 17px;
     line-height: 26px;
     text-transform: uppercase;
+}
+.tittle h1{
+    text-align: left;
+    color: #fff;
 }
 .div_temp1{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 3px;
     line-height: 18px;
-}
-.div_argumento{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    font-size: 1.2rem;
-    line-height: 24px;
-    letter-spacing: 0.5px;
 }
 .second{
     margin-top: 5%;
@@ -176,13 +211,6 @@ section{
 .lb-caption{
     color: #fff;
 }
-.main_galery_tittle{
-    display: inline-block;
-    width: 100%;
-    font-size: 2rem;
-    text-align: center;
-    color: rgb(172, 109, 42);
-}
 .galery_container{
     display: inline-flex;
     flex-wrap:wrap;
@@ -203,19 +231,16 @@ section{
 }
 /*CONTACTO*/
 .main_contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: 50px;
-    margin-bottom: 5%;
+    width: 95%;
+    margin: auto;
+    padding: 1% ;
+    background-color: red;
 }
 .contact_form{
+    margin-top: 1%;
     position: relative;
 	width: 460px;
     height: auto;
-    margin: 80px auto;
 	border-radius: 10px;
 	padding-top: 30px;
 	padding-bottom: 20px;
@@ -275,15 +300,12 @@ span{
 	color: #000;
 }
 .aviso{
-	font-size: 13px;  
+	font-size: .8rem;  
 	color: #000000;
-    font-weight: bold;
 }
-#form_title{
-	font-size: 39px;  
+#form_title{  
 	text-align: left; 
 	padding-bottom: 20px; 
-	color: #000;
 }
 #form_subtitle{
 	font-size: 16px; 
@@ -309,29 +331,16 @@ form p{
 	border: 1px solid #97d848;
 }
 /*TEMPORADA1*/
+#temp_background{
+    height: 650px;
+    background-image: url(/Imgs/Galeria/26.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
 .main_temp1{
     padding: 2%;
     width: 95%;
     margin: auto;
-}
-.sinopsis{
-    text-align: center;
-}
-.sinopsis h2{
-    font-size: 2.8rem;
-    margin-bottom: 1%;
-}
-.sinopsis div{
-    font-size: 1.6rem;
-    text-align: justify;
-}
-.episodios{
-    text-align: center;
-}
-.episodios h3{
-    font-size: 2.3rem;
-    margin-top: 3%;
-    margin-bottom: 1%;
 }
 .episodios_lista{
     list-style: none;
@@ -370,10 +379,9 @@ form p{
     display: flex;
     flex-direction: column;
     width: 70%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 5%;
     font-size: 1.5rem;
-    margin-left: 1.5%;
 }
 .episodio_desc h4{
 text-decoration: overline;
@@ -395,20 +403,16 @@ text-decoration: overline;
     letter-spacing: 0.05rem;
     line-height: 2.5rem;
 }
-.datos_tecnicos h3{
-    font-size: 2rem;
-    text-decoration: underline;
-}
 .datos_tecnicos div{
     padding-left: 2%;
     border-radius: 15px;
-    background-color: rgb(41, 89, 97);
+    background-color: rgb(13, 29, 32);
     width: 95%;
     transition: all .5s;
 }
 .datos_tecnicos div:hover{
     transition: all .5s;
-    background-color: rgb(78, 172, 191);
+    background-color: rgb(38, 85, 94);
 }
 .criticas{
     display: inline-flex;
@@ -443,7 +447,13 @@ text-decoration: overline;
     text-decoration-line: overline;
 }
 /* PERSONAJES */
-.main_personajes{
+#personajes_background{
+    height: 650px;
+    background-image: url(/Imgs/Galeria/17.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.section_personajes{
     padding: 2%;
     width: 95%;
     margin: auto;
@@ -455,32 +465,33 @@ text-decoration: overline;
     color: rgb(172, 109, 42);
 }
 .personaje_container{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     padding: 2%;
     border-radius: 25px;
     background-color: rgb(13, 29, 32);
     transition: all .5s;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .personaje_container:hover{
     transition: all .5s;
     background-color: rgb(38, 85, 94);
 }
+.personaje_container h2{
+    text-align: center;
+}
 .personaje_img img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+    width: 20%;
+    max-height: 300px;
+    object-fit: contain;
     border-radius: 10px;
 }
-#reacherimg{
-    width: 500px;
-    height: 666px;
-}
 .descripcion{
-    text-align: left;
-    padding: 2%;
-    font-size: 2rem;
+    width: 60%;
 }
 /* FOOTER */
 footer{
@@ -490,6 +501,7 @@ footer{
     height: 100px;
     background-color: black;
     color: #fff;
+    font-size: 1.4rem;
 }
 @media (max-width: 480px) { 
     *{
@@ -574,23 +586,28 @@ footer{
         margin-right: 0;
     }
     .tittle{
-        margin: 0;
-        text-align: center;
-        padding: 5%;
-        font-size: 1.9rem;
+        padding: 0;
         letter-spacing: 14px;
         line-height: 26px;
         width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .tittle h1{
+        margin: 0;
+        text-align: center;
+        font-size: 2.3rem;
+        color: rgb(172, 109, 42);
     }
     .div_temp1{
         text-align: center;
-        padding: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     .div_temp1 a{
         font-size: 1.4rem;
     }
     .div_argumento{
-        padding: 5%;
         font-size: 1.1rem;
     }
     .second iframe{
@@ -623,18 +640,35 @@ footer{
     }
 
     /* TEMPORADA1 */
+    #temp_background{
+        max-width: 480px;
+        height: 250px;
+        background-image: url(/Imgs/Galeria/26.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .main_temp1 h1{
+        margin-bottom: 5%;
+    }
     .episodio_imagen{
-        display: none;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .episodio_imagen img{
+        margin: 0;
     }
     .lista_episodios_container{
-        margin: 0;
-        justify-content: left;
+        display: block;
     }
     .episodio_desc{
-        margin: 0;
-        padding: 0;
-        font-size: 1.2rem;
+        margin: auto;
+        padding-top: 3%;
+        font-size: 1.3rem;
         width: 100%;
+    }
+    .episodio_desc h4{
+        font-size: 1.3rem;
     }
     /* PERSONAJES */
     .personaje_container{
